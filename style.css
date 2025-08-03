@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 /* Global Styles */
+=======
+
+>>>>>>> 8f8f780e76c3c5fe267a1aa16cbba6c7a2ba92b3
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
   line-height: 1.6;
   background-color: #fff;
   color: #333;
@@ -176,4 +181,50 @@ footer {
 
 body.dark-theme footer {
   background: #2a2a2a;
+=======
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.dark-theme {
+  background-color: #222;
+  color: #f9f9f9;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-links img {
+  width: 24px;
+  margin: 5px;
+}
+
+main {
+  padding: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #eee;
+>>>>>>> 8f8f780e76c3c5fe267a1aa16cbba6c7a2ba92b3
 }
