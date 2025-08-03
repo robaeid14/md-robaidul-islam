@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MD ROBAIDUL ISLAM</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="assets/images/profile.jpg" alt="Profile" class="profile-pic" />
+    <h1>MD ROBAIDUL ISLAM</h1>
+    <p class="tagline">Learner</p>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-toggle">Toggle Theme</button>
+    </nav>
+    <div class="social-links">
+      <a href="#"><img src="assets/icons/github.svg" alt="GitHub"></a>
+      <a href="#"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
+      <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="assets/icons/youtube.svg" alt="YouTube"></a>
+      <a href="mailto:your@email.com"><img src="assets/icons/email.svg" alt="Email"></a>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <!-- Edit your CV-like content below -->
+      <p>Hello, I’m <strong>MD Robaidul Islam</strong>.</p>
+      <h3>Education</h3>
+      <ul>
+        <li>B.Sc. in Computer Science, Your University Name, Year</li>
+      </ul>
+      <h3>Experience</h3>
+      <ul>
+        <li>Job/Internship Title - Company (Dates)</li>
+      </ul>
+      <h3>Skills</h3>
+      <ul>
+        <li>HTML, CSS, JavaScript, etc.</li>
+      </ul>
+    </section>
+
+    <section id="blog">
+      <h2>Blog</h2>
+      <p>Click on a post below to read:</p>
+      <ul>
+        <li><a href="posts/post1.html">First Blog Post</a></li>
+        <li><a href="posts/post2.html">Another Post Title</a></li>
+        <!-- Add new blog links here -->
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="https://formsubmit.co/your@email.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MD Robaidul Islam. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Theme Toggle
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      document.body.classList.toggle('dark-theme');
+    });
+  </script>
+</body>
+</html>
