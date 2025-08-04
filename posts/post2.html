@@ -36,6 +36,22 @@
       border-left: 5px solid #007acc;
       margin-top: 20px;
     }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+    .nav-buttons a {
+      background-color: #007acc;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .nav-buttons a:hover {
+      background-color: #005b99;
+    }
   </style>
 </head>
 <body>
@@ -132,6 +148,11 @@
     </div>
 
     <p style="margin-top: 30px; font-style: italic;">— End of Post</p>
+
+    <div class="nav-buttons">
+      <a href="post1.html">← Previous Post</a>
+      <a href="post3.html">Next Post →</a>
+    </div>
   </div>
 </body>
 </html>
