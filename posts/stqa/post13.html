@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Section 13: Test Adequacy Assessment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      color: #222;
+    }
+    ul {
+      margin-left: 1.5rem;
+    }
+    .summary {
+      background: #f0f0f0;
+      padding: 15px;
+      border-left: 5px solid #007acc;
+      margin-top: 20px;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+    .nav-buttons a {
+      background-color: #007acc;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .nav-buttons a:hover {
+      background-color: #005b99;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../stqa.html" class="back-link">&larr; Back to Main Menu</a>
+    <h1>Section 13: Test Adequacy Assessment</h1>
+
+    <h2>Definition</h2>
+    <p>Test adequacy assessment determines how sufficient and effective a set of test cases is in testing a software application. It helps in understanding how well the software has been tested and whether additional tests are needed.</p>
+
+    <h2>Adequacy Criteria</h2>
+    <p>Adequacy criteria are the rules or requirements that a test set must satisfy to be considered adequate. Common adequacy criteria include:</p>
+    <ul>
+      <li>Statement coverage</li>
+      <li>Branch coverage</li>
+      <li>Path coverage</li>
+      <li>Condition coverage</li>
+    </ul>
+
+    <h2>Control Flow Based Criteria</h2>
+    <p>This criterion evaluates how well the test cases exercise the control flow (decision points, loops, etc.) of a program. Examples include:</p>
+    <ul>
+      <li><strong>Statement Coverage:</strong> Ensures all statements are executed at least once.</li>
+      <li><strong>Branch Coverage:</strong> Ensures all branches (true/false outcomes) of decision points are tested.</li>
+      <li><strong>Path Coverage:</strong> Ensures all possible paths in the control flow graph are covered.</li>
+    </ul>
+
+    <h2>Data Flow Based Criteria</h2>
+    <p>This criterion assesses the interaction of program variables throughout the execution. It includes:</p>
+    <ul>
+      <li><strong>Definition-Use (DU) Pairs:</strong> Covers all combinations of variable definitions and their corresponding uses.</li>
+      <li><strong>All-Defs and All-Uses Criteria:</strong> Requires that each variable’s definition is tested with all its uses (computational or predicate).</li>
+    </ul>
+
+    <h2>Mutation Based Criteria</h2>
+    <p>This criterion uses small changes (mutants) in the program code to test whether the test cases can detect them. If a test case fails when a mutant is introduced, the test is considered strong.</p>
+    <ul>
+      <li><strong>Mutation Score:</strong> Percentage of mutants detected by the test cases.</li>
+      <li><strong>Equivalent Mutants:</strong> Mutants that do not change the behavior of the program and cannot be detected.</li>
+    </ul>
+
+    <h2>Adequacy as a Stopping Criterion</h2>
+    <p>Test adequacy can serve as a metric to decide when to stop testing. If a certain adequacy level (e.g., 90% branch coverage) is reached, further testing might not be necessary.</p>
+
+    <h2>Adequacy as a Tool for Test Enhancement</h2>
+    <p>By analyzing adequacy metrics, testers can identify untested areas and add more test cases to improve coverage. This leads to better quality and higher reliability of the software.</p>
+
+    <h2>Exam Point Summary</h2>
+    <div class="summary">
+      <ul>
+        <li>Test adequacy assesses the sufficiency of a test suite.</li>
+        <li>Common criteria: control flow, data flow, and mutation-based.</li>
+        <li>Used as a guideline to stop or enhance testing efforts.</li>
+      </ul>
+    </div>
+
+    <div class="nav-buttons">
+      <a href="post12.html">&larr; Previous Post</a>
+      <a href="post14.html">Next Post &rarr;</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Section 14: GUI, Security, Random, and Combinatorial Testing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      color: #1a1a1a;
+    }
+    ul, ol {
+      margin-left: 1.5rem;
+    }
+    .summary {
+      background: #f0f0f0;
+      padding: 15px;
+      border-left: 5px solid #007acc;
+      margin-top: 20px;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+    .nav-buttons a {
+      background-color: #007acc;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .nav-buttons a:hover {
+      background-color: #005b99;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../stqa.html" class="back-link">&larr; Back to Main Menu</a>
+    <h1>Section 14: GUI, Security, Random, and Combinatorial Testing</h1>
+
+    <h2>1. GUI Testing</h2>
+    <p>GUI (Graphical User Interface) testing focuses on verifying that the application's front-end behaves as expected. It ensures that visual elements and workflows are functional, user-friendly, and error-free.</p>
+    <ul>
+      <li>Check layout, alignment, and element presence (buttons, forms, labels).</li>
+      <li>Validate input handling and error messages.</li>
+      <li>Test responsiveness across screen sizes or devices.</li>
+      <li>Automated tools: Selenium, TestComplete, Ranorex.</li>
+    </ul>
+
+    <h2>2. Security Testing</h2>
+    <p>Security testing evaluates a system's ability to protect data and maintain functionality as intended against malicious attacks.</p>
+    <ul>
+      <li>Identify vulnerabilities (e.g., SQL injection, XSS).</li>
+      <li>Verify authentication and authorization mechanisms.</li>
+      <li>Test for secure data transmission and encryption.</li>
+      <li>Assess how the system reacts to intrusion or hacking attempts.</li>
+      <li>Tools: OWASP ZAP, Burp Suite.</li>
+    </ul>
+
+    <h2>3. Random Testing</h2>
+    <p>Random testing, or monkey testing, involves feeding random inputs into the system to detect unexpected crashes or behavior.</p>
+    <ul>
+      <li>Inputs are generated without predefined rules.</li>
+      <li>Useful for stress or fuzz testing scenarios.</li>
+      <li>Advantages: simple to apply, helps find edge cases.</li>
+      <li>Limitations: low coverage, difficult to reproduce failures.</li>
+    </ul>
+
+    <h2>4. Combinatorial Testing</h2>
+    <p>Combinatorial testing systematically tests combinations of input parameters to detect interaction faults.</p>
+    <ul>
+      <li>Useful when multiple parameters affect system behavior.</li>
+      <li>Reduces total number of tests while maintaining coverage.</li>
+      <li>Techniques: pairwise testing, t-way testing.</li>
+      <li>Tools: ACTS (Advanced Combinatorial Testing System).</li>
+    </ul>
+
+    <h2>📝 Exam Point Summary</h2>
+    <div class="summary">
+      <ul>
+        <li><strong>GUI Testing:</strong> Validates visual elements and user interaction.</li>
+        <li><strong>Security Testing:</strong> Protects against vulnerabilities and attacks.</li>
+        <li><strong>Random Testing:</strong> Uses random input to detect crashes.</li>
+        <li><strong>Combinatorial Testing:</strong> Tests combinations of input parameters to find interaction defects.</li>
+      </ul>
+    </div>
+
+    <p style="margin-top: 30px; font-style: italic;">&mdash; End of Post</p>
+
+    <div class="nav-buttons">
+      <a href="post13.html">&larr; Previous Post</a>
+      <a href="post15.html">Next Post &rarr;</a>
+    </div>
+  </div>
+</body>
+</html>
