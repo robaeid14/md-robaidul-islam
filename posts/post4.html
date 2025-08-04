@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Test Case - Software Testing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      color: #1a1a1a;
+    }
+    ul, ol {
+      margin-left: 1.5rem;
+    }
+    .summary {
+      background: #f0f0f0;
+      padding: 15px;
+      border-left: 5px solid #007acc;
+      margin-top: 20px;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+    .nav-buttons a {
+      background-color: #007acc;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .nav-buttons a:hover {
+      background-color: #005b99;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../index.html" class="back-link">← Back to Home</a>
+    <h1>Section 4: Test Case</h1>
+
+    <h2>Definition</h2>
+    <p>
+      A <strong>test case</strong> is a set of conditions or variables under which a tester determines whether a software system or one of its features is working as intended.
+    </p>
+    <p>
+      It includes input data, execution steps, and the expected outcome to validate a specific software feature or function.
+    </p>
+
+    <h2>Key Components of a Test Case</h2>
+    <ul>
+      <li><strong>Test Case ID:</strong> Unique identifier for tracking.</li>
+      <li><strong>Test Description:</strong> Purpose of the test.</li>
+      <li><strong>Preconditions:</strong> What must be true before running the test.</li>
+      <li><strong>Test Steps:</strong> Actions to perform.</li>
+      <li><strong>Test Data:</strong> Input values for the test.</li>
+      <li><strong>Expected Result:</strong> What should happen.</li>
+      <li><strong>Actual Result:</strong> What actually happened during execution.</li>
+      <li><strong>Status:</strong> Pass/Fail based on comparison of expected vs actual result.</li>
+    </ul>
+
+    <h2>Types of Test Cases</h2>
+    <ul>
+      <li><strong>Positive Test Case:</strong> Tests system behavior with valid input.</li>
+      <li><strong>Negative Test Case:</strong> Tests system response to invalid or unexpected input.</li>
+      <li><strong>Boundary Test Case:</strong> Focuses on edge values (e.g., min/max limits).</li>
+      <li><strong>Functional Test Case:</strong> Validates specific features against requirements.</li>
+      <li><strong>Non-Functional Test Case:</strong> Tests performance, usability, security, etc.</li>
+    </ul>
+
+    <h2>Why Test Cases Are Important</h2>
+    <ul>
+      <li>Ensure systematic testing and traceability.</li>
+      <li>Help reproduce bugs and errors clearly.</li>
+      <li>Enable consistent regression testing.</li>
+      <li>Support test automation with clear input/output.</li>
+      <li>Provide documentation of what has been tested.</li>
+    </ul>
+
+    <h2>Sample Test Case Format</h2>
+    <ul>
+      <li><strong>ID:</strong> TC_01</li>
+      <li><strong>Description:</strong> Verify login with valid credentials</li>
+      <li><strong>Precondition:</strong> User is on the login page</li>
+      <li><strong>Steps:</strong>
+        <ol>
+          <li>Enter valid username</li>
+          <li>Enter valid password</li>
+          <li>Click Login</li>
+        </ol>
+      </li>
+      <li><strong>Test Data:</strong> username: testuser, password: test123</li>
+      <li><strong>Expected Result:</strong> Redirect to dashboard</li>
+      <li><strong>Actual Result:</strong> Redirect to dashboard</li>
+      <li><strong>Status:</strong> Pass</li>
+    </ul>
+
+    <h2>Best Practices for Writing Test Cases</h2>
+    <ul>
+      <li>Keep them simple and clear.</li>
+      <li>Use consistent naming conventions.</li>
+      <li>Link to requirement IDs (if applicable).</li>
+      <li>Include both positive and negative scenarios.</li>
+      <li>Review and update regularly.</li>
+    </ul>
+
+    <h2>Exam Point Summary</h2>
+    <div class="summary">
+      <ul>
+        <li>A test case defines how to test a software function using specific inputs and expected outcomes.</li>
+        <li>It includes ID, description, steps, expected/actual result, and status.</li>
+        <li>Test cases ensure thorough, repeatable, and documented testing.</li>
+        <li>Both functional and non-functional scenarios should be covered.</li>
+      </ul>
+    </div>
+
+    <p style="margin-top: 30px; font-style: italic;">— End of Post</p>
+
+    <div class="nav-buttons">
+      <a href="post3.html">← Previous Post</a>
+      <a href="post5.html">Next Post →</a>
+    </div>
+  </div>
+</body>
+</html>

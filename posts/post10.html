@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Errors, Faults, and Failures - Software Testing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      color: #1a1a1a;
+    }
+    ul, ol {
+      margin-left: 1.5rem;
+    }
+    .summary {
+      background: #f0f0f0;
+      padding: 15px;
+      border-left: 5px solid #007acc;
+      margin-top: 20px;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+    .nav-buttons a {
+      background-color: #007acc;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .nav-buttons a:hover {
+      background-color: #005b99;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../index.html" class="back-link">← Back to Home</a>
+    <h1>Section 10: Errors, Faults, and Failures</h1>
+
+    <h2> Introduction</h2>
+    <p>Errors, faults, and failures are fundamental concepts in software testing and quality assurance. Understanding the relationship between them helps in identifying, analyzing, and correcting problems in software systems.</p>
+
+    <h2> Definitions</h2>
+    <ul>
+      <li><strong>Error (Mistake):</strong> A human action that produces an incorrect result. Usually made by developers, designers, or testers.</li>
+      <li><strong>Fault (Bug or Defect):</strong> The incorrect decision or code written due to an error. It exists in the software system or code.</li>
+      <li><strong>Failure:</strong> The observable incorrect behavior or output of the software during execution due to a fault.</li>
+    </ul>
+
+    <h2> Relationship Between Them</h2>
+    <ul>
+      <li><strong>Error → Fault → Failure</strong></li>
+      <li>An <strong>error</strong> made by a human results in a <strong>fault</strong> in the code.</li>
+      <li>When that faulty code executes, it can lead to a <strong>failure</strong> (visible problem).</li>
+    </ul>
+
+    <h2> Example</h2>
+    <ul>
+      <li>Developer incorrectly writes <code>if (a = b)</code> instead of <code>if (a == b)</code> → <strong>Error</strong></li>
+      <li>This causes the program to assign value instead of comparing → <strong>Fault</strong></li>
+      <li>Program behaves unexpectedly during execution → <strong>Failure</strong></li>
+    </ul>
+
+    <h2> Classification of Faults</h2>
+    <ul>
+      <li><strong>Syntax Fault:</strong> Errors in grammar or structure of the code (e.g., missing semicolon).</li>
+      <li><strong>Logical Fault:</strong> Code is syntactically correct but implements wrong logic.</li>
+      <li><strong>Computation Fault:</strong> Incorrect calculation or processing.</li>
+      <li><strong>Interface Fault:</strong> Incorrect interaction with external systems or components.</li>
+      <li><strong>Initialization Fault:</strong> Variables or states not initialized correctly.</li>
+    </ul>
+
+    <h2> Importance in Testing</h2>
+    <ul>
+      <li>Helps testers understand where and why issues occur.</li>
+      <li>Guides in creating effective test cases.</li>
+      <li>Improves debugging and quality assurance.</li>
+    </ul>
+
+    <h2> Exam Point Summary</h2>
+    <div class="summary">
+      <ul>
+        <li><strong>Error:</strong> Human mistake during development.</li>
+        <li><strong>Fault:</strong> Incorrect code resulting from an error.</li>
+        <li><strong>Failure:</strong> Incorrect software behavior during execution.</li>
+        <li>Error leads to fault, and fault causes failure during execution.</li>
+      </ul>
+    </div>
+
+    <p style="margin-top: 30px; font-style: italic;">— End of Post</p>
+
+    <div class="nav-buttons">
+      <a href="post9.html">← Previous Post</a>
+      <a href="post11.html">Next Post →</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Test Harness - Software Testing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      color: #1a1a1a;
+    }
+    ul, ol {
+      margin-left: 1.5rem;
+    }
+    .summary {
+      background: #f0f0f0;
+      padding: 15px;
+      border-left: 5px solid #007acc;
+      margin-top: 20px;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+    .nav-buttons a {
+      background-color: #007acc;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .nav-buttons a:hover {
+      background-color: #005b99;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../index.html" class="back-link">← Back to Home</a>
+    <h1>Section 6: Test Harness</h1>
+
+    <h2>Definition</h2>
+    <p>
+      A <strong>Test Harness</strong> is a collection of software and test data configured to test a program unit by running it under varying conditions and monitoring its behavior and outputs. It is mainly used in automated testing.
+    </p>
+
+    <h2>Main Components of a Test Harness</h2>
+    <ul>
+      <li><strong>Test Execution Engine:</strong> Controls the running of test scripts.</li>
+      <li><strong>Test Scripts:</strong> The automated test cases written to validate functionality.</li>
+      <li><strong>Stubs and Drivers:</strong> Simulate parts of the system not yet developed or available.</li>
+      <li><strong>Test Data:</strong> Input values for testing and their expected results.</li>
+      <li><strong>Logging and Reporting Tools:</strong> Capture test results and generate reports.</li>
+    </ul>
+
+    <h2>Purpose of Using Test Harness</h2>
+    <ul>
+      <li>Automate repetitive testing tasks.</li>
+      <li>Ensure consistency in test execution.</li>
+      <li>Facilitate regression and performance testing.</li>
+      <li>Simulate external dependencies using stubs or mock objects.</li>
+      <li>Increase efficiency and coverage in testing.</li>
+    </ul>
+
+    <h2>Benefits of a Test Harness</h2>
+    <ul>
+      <li>Reduces manual effort and human error.</li>
+      <li>Faster execution and feedback during development.</li>
+      <li>Enables continuous integration and delivery (CI/CD).</li>
+      <li>Useful in both unit and integration testing.</li>
+    </ul>
+
+    <h2>Limitations</h2>
+    <ul>
+      <li>Initial setup can be time-consuming and complex.</li>
+      <li>Requires maintenance as application code changes.</li>
+      <li>Over-reliance on automation can miss usability or UI defects.</li>
+    </ul>
+
+    <h2>Example Use Case</h2>
+    <p>
+      Suppose you're testing a login feature, but the backend server isn’t ready. A test harness can simulate server responses using mock APIs while running automated login test scripts.
+    </p>
+
+    <h2>Common Tools Used</h2>
+    <ul>
+      <li>JUnit (Java)</li>
+      <li>TestNG</li>
+      <li>PyTest (Python)</li>
+      <li>Selenium (for web automation)</li>
+      <li>Postman (for API test harness)</li>
+    </ul>
+
+    <h2>Exam Point Summary</h2>
+    <div class="summary">
+      <ul>
+        <li>A test harness includes test scripts, stubs, drivers, and tools to automate software testing.</li>
+        <li>It is used to execute tests systematically and simulate missing parts of the system.</li>
+        <li>Improves efficiency, reusability, and automation in testing activities.</li>
+      </ul>
+    </div>
+
+    <p style="margin-top: 30px; font-style: italic;">— End of Post</p>
+
+    <div class="nav-buttons">
+      <a href="post5.html">← Previous Post</a>
+      <a href="post7.html">Next Post →</a>
+    </div>
+  </div>
+</body>
+</html>

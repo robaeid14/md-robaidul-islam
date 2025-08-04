@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Test Generation from Requirements</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      color: #1a1a1a;
+    }
+    ul, ol {
+      margin-left: 1.5rem;
+    }
+    .summary {
+      background: #f0f0f0;
+      padding: 15px;
+      border-left: 5px solid #007acc;
+      margin-top: 20px;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+    .nav-buttons a {
+      background-color: #007acc;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .nav-buttons a:hover {
+      background-color: #005b99;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../index.html" class="back-link">&larr; Back to Home</a>
+    <h1>Section 12: Test Generation from Requirements</h1>
+
+    <h2>Introduction</h2>
+    <p>Test generation from requirements involves deriving test cases directly from the specifications or requirements of a system. The goal is to ensure that all required behaviors of the system are adequately tested without depending solely on the implementation code.</p>
+
+    <h2>Equivalence Partitioning</h2>
+    <p>This technique divides input data into partitions or classes. Each class represents a set of valid or invalid inputs that are expected to be treated similarly by the software. One test case is selected from each partition, assuming it represents the entire class.</p>
+    <ul>
+      <li>Reduces total number of test cases while maintaining good coverage.</li>
+      <li>Example: For age input (1–100), valid partitions could be &lt;1, 1–100, &gt;100.</li>
+    </ul>
+
+    <h2>Boundary Value Analysis (BVA)</h2>
+    <p>BVA focuses on testing the boundary values of input domains. Errors often occur at the edge of input ranges, so testing just inside and outside of boundaries is crucial.</p>
+    <ul>
+      <li>For range 1–100, test cases: 0, 1, 2, 99, 100, 101.</li>
+      <li>Complements equivalence partitioning by targeting boundary-related bugs.</li>
+    </ul>
+
+    <h2>Category Partitioning</h2>
+    <p>Category partitioning identifies functional areas (categories) and their possible choices (values or conditions). Then, meaningful combinations of choices are used to design test cases.</p>
+    <ul>
+      <li>Steps include identifying parameters, creating categories, and combining choices.</li>
+      <li>Example: Login input could have categories like Username (valid/invalid), Password (valid/invalid).</li>
+    </ul>
+
+    <h2>Fault Model for Predicates</h2>
+    <p>This approach assumes that faults are most likely in decision predicates (e.g., if, while). Test cases are created to trigger each logical path in predicates and reveal faults like incorrect operators or missing conditions.</p>
+    <ul>
+      <li>Helps in revealing logical and Boolean faults.</li>
+      <li>Example: For condition (x &gt; 0 &amp;&amp; y &lt; 5), test different true/false combinations.</li>
+    </ul>
+
+    <h2>BOR (Boolean Operator Testing)</h2>
+    <p>BOR focuses on testing Boolean expressions by varying operators (AND, OR, NOT). It aims to identify faults in logic by creating minimal test sets that evaluate all combinations.</p>
+    <ul>
+      <li>Targets Boolean expressions directly from conditions.</li>
+      <li>Useful when logic is dependent on multiple Boolean variables.</li>
+    </ul>
+
+    <h2>BRO (Boolean and Relational Operator Testing)</h2>
+    <p>Extends BOR by including relational operators (e.g., ==, &gt;, &lt;). It tests both Boolean and relational conditions to detect complex logical faults.</p>
+    <ul>
+      <li>Example: (x &gt; y) || (z == 10)</li>
+      <li>Each relational part and the Boolean combination is tested separately.</li>
+    </ul>
+
+    <h2>BRE (Boolean and Relational Expression Testing)</h2>
+    <p>The BRE method combines the testing of complete Boolean and relational expressions. It includes nested conditions and complex predicates.</p>
+    <ul>
+      <li>Example: ((x &gt; y) &amp;&amp; (z != 10)) || (a == b)</li>
+      <li>Each sub-expression is tested for both true and false combinations.</li>
+    </ul>
+
+    <h2>Limitations of Test Generation from Requirements</h2>
+    <ul>
+      <li>Requirements may be ambiguous, incomplete, or inconsistent.</li>
+      <li>Not all requirements can be mapped to specific test cases (e.g., usability).</li>
+      <li>Effort required to model logic or predicates can be high.</li>
+      <li>May miss performance or timing issues that arise only during execution.</li>
+    </ul>
+
+    <h2>Exam Point Summary</h2>
+    <div class="summary">
+      <ul>
+        <li>Test generation uses techniques like equivalence partitioning, BVA, category partitioning.</li>
+        <li>Predicate-based methods (BOR, BRO, BRE) test logical faults.</li>
+        <li>These techniques improve early test coverage based on specs.</li>
+        <li>Limitations include vague requirements and high modeling effort.</li>
+      </ul>
+    </div>
+
+    <p style="margin-top: 30px; font-style: italic;">&mdash; End of Post</p>
+
+    <div class="nav-buttons">
+      <a href="post11.html">&larr; Previous Post</a>
+      <a href="post13.html">Next Post &rarr;</a>
+    </div>
+  </div>
+</body>
+</html>

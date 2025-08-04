@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Testing and Development - Software Testing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #1a1a1a;
+    }
+    ul, ol {
+      margin-left: 1.5rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    .summary {
+      background: #f0f0f0;
+      padding: 15px;
+      border-left: 5px solid #007acc;
+      margin-top: 20px;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+    .nav-buttons a {
+      background-color: #007acc;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .nav-buttons a:hover {
+      background-color: #005b99;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../index.html" class="back-link">← Back to Home</a>
+    <h1>Section 3: Testing and Development</h1>
+
+    <h2>Overview</h2>
+    <p>
+      Testing and development are two parallel and interdependent processes in software engineering.
+      While development focuses on building the software, testing ensures that the built software is functioning correctly and meeting the requirements.
+    </p>
+
+    <h2>Relationship between Testing and Development</h2>
+    <ul>
+      <li><strong>Complementary Processes:</strong>
+        <ul>
+          <li>Development produces the software artifacts (code, design, etc.).</li>
+          <li>Testing evaluates those artifacts to find defects and ensure quality.</li>
+        </ul>
+      </li>
+      <li><strong>Early Testing Principle:</strong>
+        <ul>
+          <li>Testing activities should begin as early as possible in the development life cycle to catch defects early and reduce cost.</li>
+          <li>Example: Reviewing requirements and design before coding.</li>
+        </ul>
+      </li>
+      <li><strong>Continuous Feedback Loop:</strong>
+        <ul>
+          <li>Test results provide feedback to developers for debugging, improving code quality, and refining design or requirements.</li>
+        </ul>
+      </li>
+      <li><strong>Shift-Left Testing:</strong>
+        <ul>
+          <li>Testing is integrated early in the development cycle, often during requirement analysis and design.</li>
+          <li>Helps in preventing bugs instead of just detecting them later.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Development Models and Testing Integration</h2>
+    <ul>
+      <li><strong>Waterfall Model:</strong>
+        <ul>
+          <li>Testing is a separate phase after development.</li>
+          <li><strong>Issues:</strong> Late defect detection, higher cost of fixing bugs.</li>
+        </ul>
+      </li>
+      <li><strong>V-Model (Verification & Validation Model):</strong>
+        <ul>
+          <li>Testing activities are mapped to each development stage.</li>
+          <li>Emphasizes early testing and traceability.</li>
+        </ul>
+      </li>
+      <li><strong>Agile Model:</strong>
+        <ul>
+          <li>Testing and development happen concurrently.</li>
+          <li>Focuses on continuous integration, frequent releases, and automated testing.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Developer vs Tester Roles</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Aspect</th>
+          <th>Developer</th>
+          <th>Tester</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Main Task</td>
+          <td>Write code</td>
+          <td>Test software</td>
+        </tr>
+        <tr>
+          <td>Objective</td>
+          <td>Implement functionality</td>
+          <td>Verify correctness</td>
+        </tr>
+        <tr>
+          <td>Mindset</td>
+          <td>Creative (How to make it work)</td>
+          <td>Destructive (How to break it)</td>
+        </tr>
+        <tr>
+          <td>Tools Used</td>
+          <td>IDEs, compilers</td>
+          <td>Test management, bug tracking tools</td>
+        </tr>
+        <tr>
+          <td>Scope</td>
+          <td>Specific modules or features</td>
+          <td>System-wide testing</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Exam Point Summary</h2>
+    <div class="summary">
+      <p><strong>Testing and development are complementary processes.</strong></p>
+      <ul>
+        <li>Developers build the software, and testers evaluate it to ensure quality.</li>
+        <li>Testing should start early in the development cycle to reduce defect cost.</li>
+        <li>In models like V-Model or Agile, testing is integrated at every stage to improve feedback and reliability.</li>
+      </ul>
+    </div>
+
+    <p style="margin-top: 30px; font-style: italic;">— End of Post</p>
+
+    <div class="nav-buttons">
+      <a href="post2.html">← Previous Post</a>
+      <a href="post4.html">Next Post →</a>
+    </div>
+  </div>
+</body>
+</html>

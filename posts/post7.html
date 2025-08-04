@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Testing and Debugging - Software Testing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      color: #1a1a1a;
+    }
+    ul, ol {
+      margin-left: 1.5rem;
+    }
+    .summary {
+      background: #f0f0f0;
+      padding: 15px;
+      border-left: 5px solid #007acc;
+      margin-top: 20px;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+    .nav-buttons a {
+      background-color: #007acc;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .nav-buttons a:hover {
+      background-color: #005b99;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../index.html" class="back-link">← Back to Home</a>
+    <h1>Section 7: Testing and Debugging</h1>
+
+    <h2>Definition</h2>
+    <ul>
+      <li><strong>Testing</strong> is the process of identifying defects in software by executing it and comparing actual results with expected outcomes.</li>
+      <li><strong>Debugging</strong> is the process of locating, analyzing, and fixing the defects found during testing.</li>
+    </ul>
+
+    <h2>Purpose</h2>
+    <ul>
+      <li><strong>Testing:</strong> Detect the presence of bugs.</li>
+      <li><strong>Debugging:</strong> Diagnose and correct the cause of bugs.</li>
+    </ul>
+
+    <h2>Key Differences Between Testing and Debugging</h2>
+    <table border="1" cellspacing="0" cellpadding="8">
+      <thead>
+        <tr>
+          <th>Aspect</th>
+          <th>Testing</th>
+          <th>Debugging</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Goal</td>
+          <td>To find bugs</td>
+          <td>To fix bugs</td>
+        </tr>
+        <tr>
+          <td>Performed By</td>
+          <td>Testers</td>
+          <td>Developers</td>
+        </tr>
+        <tr>
+          <td>Timing</td>
+          <td>After implementation</td>
+          <td>After bug detection</td>
+        </tr>
+        <tr>
+          <td>Tools</td>
+          <td>Testing frameworks, test cases</td>
+          <td>Debuggers, log analyzers</td>
+        </tr>
+        <tr>
+          <td>Approach</td>
+          <td>Validation & verification</td>
+          <td>Code analysis & fixing</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Process Flow</h2>
+    <ol>
+      <li>Testers run test cases and find failures.</li>
+      <li>Test results and logs are shared with developers.</li>
+      <li>Developers reproduce the issue using debug tools.</li>
+      <li>Code is analyzed to find the root cause.</li>
+      <li>Bug is fixed and the fix is re-tested.</li>
+    </ol>
+
+    <h2>Tools Used</h2>
+    <ul>
+      <li><strong>Testing:</strong> Selenium, JUnit, TestNG, PyTest, Postman</li>
+      <li><strong>Debugging:</strong> Visual Studio Debugger, Chrome DevTools, GDB (Linux), Android Studio Debugger</li>
+    </ul>
+
+    <h2>Challenges</h2>
+    <ul>
+      <li>Not all defects are easy to reproduce.</li>
+      <li>Some bugs only appear under specific conditions (e.g., race conditions, memory leaks).</li>
+      <li>Debugging large codebases is time-consuming.</li>
+    </ul>
+
+    <h2>Best Practices</h2>
+    <ul>
+      <li>Log meaningful messages with timestamps and levels (info, warn, error).</li>
+      <li>Use assertions to validate logic during development.</li>
+      <li>Use version control to identify changes that introduced bugs.</li>
+    </ul>
+
+    <h2>Exam Point Summary</h2>
+    <div class="summary">
+      <ul>
+        <li>Testing finds bugs, debugging fixes them.</li>
+        <li>Testing is done by testers; debugging is done by developers.</li>
+        <li>Both are crucial for software quality assurance.</li>
+      </ul>
+    </div>
+
+    <p style="margin-top: 30px; font-style: italic;">— End of Post</p>
+
+    <div class="nav-buttons">
+      <a href="post6.html">← Previous Post</a>
+      <a href="post8.html">Next Post →</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Test Adequacy - Software Testing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      color: #1a1a1a;
+    }
+    ul, ol {
+      margin-left: 1.5rem;
+    }
+    .summary {
+      background: #f0f0f0;
+      padding: 15px;
+      border-left: 5px solid #007acc;
+      margin-top: 20px;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+    .nav-buttons a {
+      background-color: #007acc;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .nav-buttons a:hover {
+      background-color: #005b99;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../index.html" class="back-link">← Back to Home</a>
+    <h1>Section 8: Test Adequacy</h1>
+
+    <h2> Definition</h2>
+    <ul>
+      <li>Test adequacy is a measure of how well a test suite tests a program. It assesses the completeness and effectiveness of testing based on certain criteria.</li>
+    </ul>
+
+    <h2> Objectives of Test Adequacy</h2>
+    <ul>
+      <li>To evaluate the sufficiency of test cases.</li>
+      <li>To ensure that critical parts of code are tested.</li>
+      <li>To define measurable goals for testing.</li>
+    </ul>
+
+    <h2> Adequacy Criteria</h2>
+    <ul>
+      <li><strong>Statement Coverage:</strong> Checks if all executable statements have been tested.</li>
+      <li><strong>Branch Coverage:</strong> Ensures each possible branch (if/else) is tested.</li>
+      <li><strong>Condition Coverage:</strong> Verifies each boolean sub-expression evaluates both true and false.</li>
+      <li><strong>Path Coverage:</strong> Tests all possible paths through a given part of the code.</li>
+      <li><strong>Data Flow Coverage:</strong> Focuses on variable definitions and their uses.</li>
+      <li><strong>Mutation Testing:</strong> Checks if test cases can detect small changes (mutants) in the program.</li>
+    </ul>
+
+    <h2> Why Test Adequacy is Important</h2>
+    <ul>
+      <li>Improves confidence in the quality of software.</li>
+      <li>Reveals gaps in testing and potential undetected bugs.</li>
+      <li>Helps determine when testing is enough.</li>
+    </ul>
+
+    <h2> Challenges</h2>
+    <ul>
+      <li>Achieving 100% coverage is often impractical.</li>
+      <li>Some paths or conditions may be infeasible to test.</li>
+      <li>High coverage doesn’t always guarantee defect-free software.</li>
+    </ul>
+
+    <h2> When to Use Adequacy Criteria</h2>
+    <ul>
+      <li>To assess test suite quality in regulated industries (e.g., medical, aviation).</li>
+      <li>During test optimization and review phases.</li>
+      <li>For critical systems where fault tolerance is important.</li>
+    </ul>
+
+    <h2> Exam Point Summary</h2>
+    <div class="summary">
+      <ul>
+        <li>Test adequacy measures the completeness of testing.</li>
+        <li>Common adequacy criteria include statement, branch, condition, and path coverage.</li>
+        <li>It helps ensure sufficient testing and identify weak spots in the test suite.</li>
+        <li>However, 100% coverage does not guarantee zero defects.</li>
+      </ul>
+    </div>
+
+    <p style="margin-top: 30px; font-style: italic;">— End of Post</p>
+
+    <div class="nav-buttons">
+      <a href="post7.html">← Previous Post</a>
+      <a href="post9.html">Next Post →</a>
+    </div>
+  </div>
+</body>
+</html>
