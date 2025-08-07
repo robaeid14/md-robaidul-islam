@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Linux Keyboard Shortcuts</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      color: #007acc;
+    }
+    h2 {
+      color: #2c3e50;
+      margin-top: 30px;
+      
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e9e9e9;
+    }
+
+    section {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .ebook-download-link {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #0077cc;
+      color: white;
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .ebook-download-link:hover {
+      background-color: #005fa3;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <a href="../index.html" class="back-link">← Back to Home</a>
+  <h1>Linux Keyboard Shortcuts at a Glance</h1>
+
+  <section>
+    <h2>1. Terminal & Shell Editing Shortcuts</h2>
+    <table>
+      <tr><th>Shortcut</th><th>Action</th><th>Description</th></tr>
+      <tr><td>Ctrl + A</td><td>Move cursor to the beginning of the line</td><td>Quickly jump to line start</td></tr>
+      <tr><td>Ctrl + E</td><td>Move cursor to the end of the line</td><td>Jump to line end</td></tr>
+      <tr><td>Ctrl + U</td><td>Cut from cursor to beginning</td><td>Clear from cursor backward</td></tr>
+      <tr><td>Ctrl + K</td><td>Cut from cursor to end</td><td>Clear from cursor forward</td></tr>
+      <tr><td>Ctrl + W</td><td>Cut word before cursor</td><td>Delete previous word</td></tr>
+      <tr><td>Ctrl + Y</td><td>Paste last cut text</td><td>Yank (paste) text back</td></tr>
+      <tr><td>Ctrl + D</td><td>Delete under cursor / exit shell</td><td>Delete char or exit terminal</td></tr>
+      <tr><td>Ctrl + H / Backspace</td><td>Delete before cursor</td><td>Backspace delete</td></tr>
+      <tr><td>Ctrl + T</td><td>Swap char with previous</td><td>Fix typos</td></tr>
+      <tr><td>Alt + B</td><td>Move back one word</td><td>Word left</td></tr>
+      <tr><td>Alt + F</td><td>Move forward one word</td><td>Word right</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>2. Command History Shortcuts</h2>
+    <table>
+      <tr><th>Shortcut</th><th>Action</th><th>Description</th></tr>
+      <tr><td>Ctrl + R</td><td>Reverse search command history</td><td>Search interactively</td></tr>
+      <tr><td>Ctrl + G</td><td>Cancel history search</td><td>Exit reverse mode</td></tr>
+      <tr><td>Up / Down Arrows</td><td>Scroll through history</td><td>Recall or move through history</td></tr>
+      <tr><td>!!</td><td>Repeat last command</td><td>Quick rerun</td></tr>
+      <tr><td>!n</td><td>Run command number n</td><td>Execute history entry</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>3. Job Control Shortcuts</h2>
+    <table>
+      <tr><th>Shortcut</th><th>Action</th><th>Description</th></tr>
+      <tr><td>Ctrl + C</td><td>Interrupt process</td><td>Kill current command</td></tr>
+      <tr><td>Ctrl + Z</td><td>Suspend process</td><td>Pause and background job</td></tr>
+      <tr><td>fg</td><td>Resume in foreground</td><td>Bring back job</td></tr>
+      <tr><td>bg</td><td>Resume in background</td><td>Continue job</td></tr>
+      <tr><td>jobs</td><td>List jobs</td><td>See status</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>4. Autocomplete and Command Completion</h2>
+    <table>
+      <tr><th>Shortcut</th><th>Action</th><th>Description</th></tr>
+      <tr><td>Tab</td><td>Autocomplete</td><td>Command, file, variable</td></tr>
+      <tr><td>Esc + Esc</td><td>List completions</td><td>Show options</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>5. Terminal Multiplexer Shortcuts (tmux / screen)</h2>
+    <table>
+      <tr><th>Shortcut</th><th>Action</th><th>Description</th></tr>
+      <tr><td>Ctrl + B then C</td><td>New window</td><td>Start new tmux window</td></tr>
+      <tr><td>Ctrl + B then N</td><td>Next window</td><td>Switch next</td></tr>
+      <tr><td>Ctrl + B then P</td><td>Previous window</td><td>Switch previous</td></tr>
+      <tr><td>Ctrl + B then %</td><td>Split vertically</td><td>Vertical pane</td></tr>
+      <tr><td>Ctrl + B then "</td><td>Split horizontally</td><td>Horizontal pane</td></tr>
+      <tr><td>Ctrl + B then D</td><td>Detach</td><td>Return to shell</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>6. Screen Clearing and Terminal Control</h2>
+    <table>
+      <tr><th>Shortcut</th><th>Action</th><th>Description</th></tr>
+      <tr><td>Ctrl + L</td><td>Clear screen</td><td>Same as clear</td></tr>
+      <tr><td>reset</td><td>Reset terminal</td><td>Fix display</td></tr>
+      <tr><td>Ctrl + S</td><td>Pause output</td><td>Stop terminal flood</td></tr>
+      <tr><td>Ctrl + Q</td><td>Resume output</td><td>Resume after Ctrl + S</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>7. Miscellaneous Shortcuts</h2>
+    <table>
+      <tr><th>Shortcut</th><th>Action</th><th>Description</th></tr>
+      <tr><td>Ctrl + X then E</td><td>Open in editor</td><td>Edit command line</td></tr>
+      <tr><td>Ctrl + V</td><td>Insert next literally</td><td>Useful for control chars</td></tr>
+      <tr><td>Alt + .</td><td>Insert last argument</td><td>Reuse last arg</td></tr>
+      <tr><td>Ctrl + P / Ctrl + N</td><td>History navigation</td><td>Up / Down alternatives</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Tips to Practice</h2>
+    <ul>
+      <li>Navigate long commands using Ctrl + A, Ctrl + E, Alt + B, Alt + F.</li>
+      <li>Search old commands with Ctrl + R instead of arrows.</li>
+      <li>Pause/Resume jobs with Ctrl + Z, bg, fg.</li>
+      <li>Use Tab to autocomplete everything possible.</li>
+      <li>Clear screen quickly with Ctrl + L.</li>
+      <li>Combine shortcuts to work smarter, e.g., Ctrl + R then Ctrl + A.</li>
+    </ul>
+  </section>
+
+  <section id="linux-ebook">
+    <h2>📘 Download Free Linux eBook</h2>
+    <p>Boost your Linux knowledge with this handy reference eBook packed with beginner-friendly guidlines, keyboard shortcuts and practical tips.</p>
+    <a href="../downloads/Basic Linux Robaeid.pdf" download class="ebook-download-link">
+      📥 Click here to download Free eBook on Linux (PDF)
+    </a>
+  </section>
+
+</body>
+</html>
