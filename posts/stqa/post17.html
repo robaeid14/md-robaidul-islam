@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Section 17: Software Quality Models</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #007acc;
+    }
+    h2 {
+      color: #2c3e50;
+      margin-top: 30px;
+      border-bottom: 2px solid #2c3e50;
+      padding-bottom: 6px;
+    }
+    ul {
+      margin-left: 20px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    strong {
+      color: #333;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+    .nav-buttons a {
+      background-color:#007acc;
+      color: #fff;
+      padding: 10px 16px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .nav-buttons a:hover {
+      background-color: #0d165c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../stqa.html" class="back-link">&larr; Back to Main Menu</a>
+    <h1>Section 17: Software Quality Models</h1>
+
+    <h2>Overview</h2>
+    <p>
+      Software Quality Models provide structured frameworks for evaluating and ensuring software quality. These models define various attributes of quality and offer measurable criteria to assess a software system. They help developers, testers, and stakeholders understand what "quality" means in a systematic way.
+    </p>
+
+    <h2>Purpose of Quality Models</h2>
+    <ul>
+      <li>Define and categorize quality attributes.</li>
+      <li>Provide benchmarks for assessing product quality.</li>
+      <li>Guide process and product improvements.</li>
+      <li>Facilitate communication between stakeholders.</li>
+    </ul>
+
+    <h2>1. McCall’s Quality Model</h2>
+    <p>
+      One of the earliest models, McCall’s model classifies software quality into three major perspectives:
+    </p>
+    <ul>
+      <li><strong>Product Operation:</strong> Correctness, Reliability, Efficiency, Integrity, Usability</li>
+      <li><strong>Product Revision:</strong> Maintainability, Flexibility, Testability</li>
+      <li><strong>Product Transition:</strong> Portability, Reusability, Interoperability</li>
+    </ul>
+    <p>This model focuses on bridging the gap between users and developers by addressing both functional and non-functional quality aspects.</p>
+
+    <h2>2. Boehm’s Quality Model</h2>
+    <p>
+      Boehm’s model extends McCall’s by emphasizing high-level characteristics and their decomposition into primitive characteristics:
+    </p>
+    <ul>
+      <li><strong>As-is Utility:</strong> Portability, Reliability, Efficiency, Human Engineering</li>
+      <li><strong>Maintainability:</strong> Testability, Understandability, Modifiability</li>
+      <li><strong>Portability:</strong> Device Independence, Self-Containedness</li>
+    </ul>
+    <p>This model provides better insights for project managers and developers aiming to build maintainable and reusable systems.</p>
+
+    <h2>3. ISO 9126 Model (International Standard)</h2>
+    <p>
+      This is a standardized quality model defined by the International Organization for Standardization. It identifies six main quality characteristics:
+    </p>
+    <ul>
+      <li><strong>Functionality:</strong> Suitability, Accuracy, Interoperability, Compliance, Security</li>
+      <li><strong>Reliability:</strong> Maturity, Fault Tolerance, Recoverability</li>
+      <li><strong>Usability:</strong> Understandability, Learnability, Operability</li>
+      <li><strong>Efficiency:</strong> Time Behavior, Resource Utilization</li>
+      <li><strong>Maintainability:</strong> Analyzability, Changeability, Stability, Testability</li>
+      <li><strong>Portability:</strong> Adaptability, Installability, Co-Existence, Replaceability</li>
+    </ul>
+    <p>
+      ISO 9126 is widely used in software evaluations and is the basis for further models like ISO/IEC 25010.
+    </p>
+
+    <h2>4. ISO/IEC 25010 Model</h2>
+    <p>
+      An updated model to ISO 9126, ISO/IEC 25010 categorizes quality into two broad areas:
+    </p>
+
+    <h3>Product Quality Characteristics:</h3>
+    <ul>
+      <li>Functional Suitability</li>
+      <li>Performance Efficiency</li>
+      <li>Compatibility</li>
+      <li>Usability</li>
+      <li>Reliability</li>
+      <li>Security</li>
+      <li>Maintainability</li>
+      <li>Portability</li>
+    </ul>
+
+    <h3>Quality in Use Characteristics:</h3>
+    <ul>
+      <li>Effectiveness</li>
+      <li>Efficiency</li>
+      <li>Satisfaction</li>
+      <li>Freedom from Risk</li>
+      <li>Context Coverage</li>
+    </ul>
+    <p>
+      This model emphasizes how software behaves in real-world usage, not just during development.
+    </p>
+
+    <h2>5. FURPS Model</h2>
+    <p>
+      FURPS stands for five key attributes:
+    </p>
+    <ul>
+      <li><strong>Functionality</strong> – Features and capabilities</li>
+      <li><strong>Usability</strong> – User experience, documentation</li>
+      <li><strong>Reliability</strong> – Availability, failure rate, recoverability</li>
+      <li><strong>Performance</strong> – Response time, throughput</li>
+      <li><strong>Supportability</strong> – Maintainability, compatibility, configurability</li>
+    </ul>
+    <p>It’s useful in defining both functional and non-functional requirements for quality.</p>
+
+    <h2>Comparison Between Models</h2>
+    <ul>
+      <li>McCall’s and Boehm’s are more traditional, while ISO 25010 is the current global standard.</li>
+      <li>ISO/IEC 25010 focuses more on user experience and operational behavior.</li>
+      <li>FURPS is more lightweight and practical for smaller teams.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>
+      Software quality models provide systematic ways to evaluate, control, and improve quality. Each model has its own strengths and scope, and the choice depends on the organization’s standards, project size, and quality goals. A good quality model helps deliver robust, user-friendly, and maintainable software.
+    </p>
+
+    <div class="nav-buttons">
+      <a href="post16.html">← Previous</a>
+      <a href="post18.html">Next →</a>
+    </div>
+  </div>
+</body>
+</html>

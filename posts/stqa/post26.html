@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Software Testing – Part 3</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      background: white;
+      margin: auto;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #007acc;
+    }
+    h2 {
+      color: #2c3e50;
+      margin-top: 30px;
+      border-bottom: 2px solid #2c3e50;
+      padding-bottom: 6px;
+    }
+    ul, ol {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0 20px 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #2c3e50;
+      color: white;
+    }
+    .example {
+      background: #ecf0f1;
+      padding: 15px 20px;
+      border-left: 5px solid #2980b9;
+      margin-bottom: 30px;
+      font-style: normal;
+      color: #34495e;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+    .nav-buttons a {
+      background-color: #007acc;
+      color: white;
+      padding: 10px 16px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .nav-buttons a:hover {
+      background-color: #0d165c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../stqa.html" class="back-link">&larr; Back to Main Menu</a>
+    <h1>Software Testing – Part 3</h1>
+
+    <h2>1. Branch & Condition Testing</h2>
+    <p>Branch and Condition Testing are white-box techniques used to evaluate decision logic in code.</p>
+
+    <h3>Branch Testing</h3>
+    <ul>
+      <li>Ensures every possible branch (true/false outcome) in decision points is tested at least once.</li>
+      <li>Focuses on the control structure (like if, else, switch).</li>
+    </ul>
+
+    <h3>Condition Testing</h3>
+    <ul>
+      <li>Tests individual Boolean expressions within a decision, regardless of the overall branch outcome.</li>
+      <li>More granular than branch testing.</li>
+    </ul>
+
+    <h3>Example</h3>
+    <div class="example">
+      <code>if (x > 0 && y > 0)</code><br/><br/>
+      <table>
+        <thead>
+          <tr>
+            <th>x > 0</th>
+            <th>y > 0</th>
+            <th>Branch Taken?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>true</td>
+            <td>true</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>true</td>
+            <td>false</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>false</td>
+            <td>true</td>
+            <td>No</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Benefits</h3>
+    <ul>
+      <li>Improves coverage of decision logic</li>
+      <li>Identifies issues in Boolean expressions</li>
+    </ul>
+
+  
+
+    <h2>2. Data Flow Testing</h2>
+    <p>Data Flow Testing focuses on how variables are defined, used, and killed (no longer needed) within the code.</p>
+
+    <h3>Key Concepts</h3>
+    <ul>
+      <li><strong>Definition (def):</strong> When a variable is assigned a value</li>
+      <li><strong>Use:</strong> When a variable’s value is used (e.g., in calculations or conditions)</li>
+      <li><strong>Kill:</strong> When a variable goes out of scope or is overwritten</li>
+    </ul>
+
+    <h3>Paths Tested</h3>
+    <ul>
+      <li>Def-Use (DU) Chains</li>
+      <li>Cover all paths from where a variable is defined to where it is used</li>
+    </ul>
+
+    <h3>Example</h3>
+    <div class="example">
+      <pre>
+int x = 5;      // def
+if (x > 3) {    // use
+   x = 10;      // def again (kills old x)
+}
+      </pre>
+    </div>
+
+    <h3>Benefits</h3>
+    <ul>
+      <li>Detects improper variable usage</li>
+      <li>Finds initialization and lifecycle issues</li>
+    </ul>
+
+   
+
+    <h2>3. Thread-Based Testing</h2>
+    <p>Thread-Based Testing is used to test multi-threaded or concurrent applications to ensure correctness in synchronization and resource sharing.</p>
+
+    <h3>Focus Areas</h3>
+    <ul>
+      <li>Race conditions</li>
+      <li>Deadlocks</li>
+      <li>Shared resource conflicts</li>
+    </ul>
+
+    <h3>Techniques</h3>
+    <ul>
+      <li>Introduce artificial delays to detect race conditions</li>
+      <li>Use testing frameworks to simulate concurrent threads</li>
+      <li>Verify thread-safe data structures and code blocks</li>
+    </ul>
+
+    <h3>Example Use Case</h3>
+    <div class="example">
+      Simulate two users accessing and updating a shared account balance at the same time.
+    </div>
+
+    <h3>Benefits</h3>
+    <ul>
+      <li>Improves reliability of concurrent systems</li>
+      <li>Detects hard-to-reproduce timing bugs</li>
+    </ul>
+
+ 
+
+    <h2>4. Integration & Integration Testing</h2>
+    <p>Integration Testing evaluates the interaction between different components or modules of a system to ensure they work together as expected.</p>
+
+    <h3>Approaches</h3>
+    <ul>
+      <li><strong>Top-Down Integration:</strong> Start with top-level modules and gradually integrate lower-level ones</li>
+      <li><strong>Bottom-Up Integration:</strong> Start with low-level modules and integrate upwards</li>
+      <li><strong>Big Bang:</strong> All modules are integrated and tested simultaneously</li>
+    </ul>
+
+    <h3>Stubs & Drivers</h3>
+    <ul>
+      <li><strong>Stubs:</strong> Used to simulate lower-level modules (in top-down)</li>
+      <li><strong>Drivers:</strong> Used to simulate upper-level modules (in bottom-up)</li>
+    </ul>
+
+    <h3>Benefits</h3>
+    <ul>
+      <li>Verifies interaction and data exchange between modules</li>
+      <li>Detects integration mismatches early</li>
+    </ul>
+
+
+
+    <h2>5. System Testing</h2>
+    <p>System Testing is a high-level testing phase that evaluates the entire software system as a whole, ensuring it meets the specified requirements.</p>
+
+    <h3>Types of System Testing</h3>
+    <ul>
+      <li><strong>Functional Testing:</strong> Tests features against business requirements</li>
+      <li><strong>Performance Testing:</strong> Evaluates speed, responsiveness, and stability</li>
+      <li><strong>Security Testing:</strong> Validates data protection, authentication, and access control</li>
+      <li><strong>Usability Testing:</strong> Assesses user-friendliness and experience</li>
+      <li><strong>Compatibility Testing:</strong> Ensures system works across devices and platforms</li>
+    </ul>
+
+    <h3>Benefits</h3>
+    <ul>
+      <li>Validates the software as a complete system</li>
+      <li>Ensures it meets business and user expectations</li>
+      <li>Readies the product for delivery or release</li>
+    </ul>
+
+    <div class="nav-buttons">
+      <a href="post25.html">← Previous</a>
+      <a href="post27.html">Next →</a>
+    </div>
+  </div>
+</body>
+</html>

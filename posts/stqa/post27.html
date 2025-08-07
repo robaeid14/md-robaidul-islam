@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Software Testing – Object-Oriented Systems</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      background: white;
+      margin: auto;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #007acc;
+    }
+    h2 {
+      color: #2c3e50;
+      margin-top: 30px;
+      border-bottom: 2px solid #2c3e50;
+      padding-bottom: 6px;
+    }
+    ul, ol {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0 20px 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #2c3e50;
+      color: white;
+    }
+    .example {
+      background: #ecf0f1;
+      padding: 15px 20px;
+      border-left: 5px solid #2980b9;
+      margin-bottom: 30px;
+      color: #34495e;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+    .nav-buttons a {
+      background-color:  #007acc;
+      color: white;
+      padding: 10px 16px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .nav-buttons a:hover {
+      background-color: #0d165c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../stqa.html" class="back-link">&larr; Back to Main Menu</a>
+    <h1>Section 27: Testing on Object-Oriented Systems</h1>
+
+    <h2>1. Overview</h2>
+    <p>
+      Object-Oriented (OO) software systems introduce additional testing complexity due to features like inheritance, encapsulation, and polymorphism. OO testing requires both structural and behavioral validation of objects, classes, and their interactions.
+    </p>
+
+    <h2>2. Key Features Impacting Testing</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>OO Feature</th>
+          <th>Testing Implication</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Encapsulation</td>
+          <td>Hard to access internal state; requires testing via public interfaces</td>
+        </tr>
+        <tr>
+          <td>Inheritance</td>
+          <td>Changes in parent classes can affect child classes unintentionally</td>
+        </tr>
+        <tr>
+          <td>Polymorphism</td>
+          <td>Method calls may resolve to multiple implementations at runtime</td>
+        </tr>
+        <tr>
+          <td>Dynamic Binding</td>
+          <td>Runtime behavior may differ from static analysis expectations</td>
+        </tr>
+        <tr>
+          <td>Object States</td>
+          <td>Each object can have unique states and transitions to test</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>3. Levels of Testing in OO Systems</h2>
+
+    <ul>
+      <li><strong>Unit Testing:</strong> Testing individual classes and methods</li>
+      <li><strong>Integration Testing:</strong> Testing interactions between classes (e.g., composition, inheritance chains)</li>
+      <li><strong>System Testing:</strong> Testing complete object collaboration in workflows</li>
+    </ul>
+
+    <h2>4. Common OO Testing Techniques</h2>
+
+    <h3>a. Class Testing</h3>
+    <ul>
+      <li>Test each class in isolation, focusing on constructors, methods, and accessors.</li>
+      <li>Include tests for both valid and invalid states.</li>
+    </ul>
+
+    <h3>b. Inheritance-Based Testing</h3>
+    <ul>
+      <li>Ensure subclasses properly override methods and maintain Liskov Substitution Principle (LSP).</li>
+      <li>Test inherited behaviors and any new ones introduced by subclasses.</li>
+    </ul>
+
+    <h3>c. State-Based Testing</h3>
+    <ul>
+      <li>Model an object as a finite state machine (FSM).</li>
+      <li>Test all state transitions triggered by events or method calls.</li>
+    </ul>
+
+    <h3>d. Interaction Testing</h3>
+    <ul>
+      <li>Validate message passing and method invocation between objects.</li>
+      <li>Use mocks/stubs to isolate object dependencies.</li>
+    </ul>
+
+    <h2>5. Example</h2>
+    <div class="example">
+      <strong>Class Hierarchy:</strong><br/>
+      <code>Animal → Dog, Cat</code><br/><br/>
+      <ul>
+        <li>Test <code>Animal</code>'s base methods (e.g., eat(), sleep())</li>
+        <li>Override <code>speak()</code> in <code>Dog</code> and <code>Cat</code></li>
+        <li>Check if <code>Dog.speak()</code> returns "Bark" and <code>Cat.speak()</code> returns "Meow"</li>
+      </ul>
+    </div>
+
+    <h2>6. Tools for OO Testing</h2>
+    <ul>
+      <li><strong>JUnit / NUnit:</strong> Popular for unit testing classes in Java/.NET</li>
+      <li><strong>Mockito:</strong> For mocking dependencies in interaction tests</li>
+      <li><strong>UML Tools:</strong> Helpful for modeling object states and transitions</li>
+    </ul>
+
+    <h2>7. Challenges</h2>
+    <ul>
+      <li>Code reuse through inheritance makes impact analysis harder</li>
+      <li>Polymorphism introduces multiple runtime paths to verify</li>
+      <li>Testing private methods and states can violate encapsulation</li>
+    </ul>
+
+    <h2>8. Best Practices</h2>
+    <ul>
+      <li>Design for testability – avoid excessive hidden states</li>
+      <li>Use mocking frameworks for loose coupling</li>
+      <li>Write tests for base and derived classes separately</li>
+      <li>Include regression tests when updating inherited code</li>
+    </ul>
+
+    <div class="nav-buttons">
+      <a href="post26.html">← Previous</a>
+      <a href="post28.html">Next →</a>
+    </div>
+  </div>
+</body>
+</html>

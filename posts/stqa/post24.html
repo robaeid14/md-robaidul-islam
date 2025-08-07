@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Software Testing – Part 1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      background: white;
+      margin: auto;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #007acc;
+    }
+    h2 {
+      color: #2c3e50;
+      margin-top: 30px;
+      border-bottom: 2px solid #2c3e50;
+      padding-bottom: 6px;
+    }
+    ul, ol {
+      margin-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+    .nav-buttons a {
+      background-color: #007acc;
+      color: white;
+      padding: 10px 16px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .nav-buttons a:hover {
+      background-color: #0d165c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../stqa.html" class="back-link">&larr; Back to Main Menu</a>
+    <h1>Section 24: Software Testing – Part 1</h1>
+
+    <h2>1. Testing Objectives & Fundamentals</h2>
+    <p>Software testing is a systematic process used to identify defects, ensure quality, and verify that the software meets requirements.</p>
+    <ul>
+      <li><strong>Main Objectives:</strong>
+        <ul>
+          <li>Verify functionality against requirements</li>
+          <li>Detect and remove defects early</li>
+          <li>Improve product quality and user satisfaction</li>
+          <li>Ensure reliability, performance, and security</li>
+        </ul>
+      </li>
+      <li><strong>Principles of Software Testing:</strong>
+        <ul>
+          <li>Testing shows presence of defects, not absence</li>
+          <li>Exhaustive testing is impossible</li>
+          <li>Early testing saves time and cost</li>
+          <li>Defect clustering and pesticide paradox</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>2. Testing Theory</h2>
+    <p>Testing theory defines the formal basis of testing practices. It establishes the mathematical and logical foundation for test design and analysis.</p>
+    <ul>
+      <li><strong>Key Concepts:</strong>
+        <ul>
+          <li><strong>Test Case:</strong> A set of conditions used to determine if a system behaves as expected.</li>
+          <li><strong>Test Suite:</strong> A collection of test cases.</li>
+          <li><strong>Oracle:</strong> A mechanism to determine the expected outcome of a test.</li>
+          <li><strong>Fault vs Error vs Failure:</strong> Fault is the cause, error is the mistake, and failure is the visible result.</li>
+        </ul>
+      </li>
+      <li><strong>Good Test Properties:</strong>
+        <ul>
+          <li>High probability of detecting faults</li>
+          <li>Non-redundant and efficient</li>
+          <li>Easy to evaluate and maintain</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>3. Coverage Criteria</h2>
+    <p>Coverage criteria are used to measure how thoroughly the source code or requirements have been tested.</p>
+    <ul>
+      <li><strong>Common Criteria:</strong>
+        <ul>
+          <li><strong>Statement Coverage:</strong> Ensures each statement is executed at least once.</li>
+          <li><strong>Branch Coverage:</strong> Ensures each possible decision (true/false) is tested.</li>
+          <li><strong>Path Coverage:</strong> Ensures all possible execution paths are tested.</li>
+          <li><strong>Condition Coverage:</strong> Ensures each boolean expression is evaluated both ways.</li>
+        </ul>
+      </li>
+      <li><strong>Purpose:</strong> To assess the adequacy of test cases and identify untested parts.</li>
+    </ul>
+
+    <h2>4. Equivalence Class Testing</h2>
+    <p>Equivalence Class Testing is a black-box test design technique used to reduce the number of test cases while maintaining effective coverage.</p>
+    <ul>
+      <li><strong>Concept:</strong> Divide input data into partitions or “equivalence classes” that are expected to be treated similarly by the system.</li>
+      <li><strong>Steps:</strong>
+        <ol>
+          <li>Identify input domains and ranges</li>
+          <li>Classify inputs into valid and invalid classes</li>
+          <li>Select one test case from each class</li>
+        </ol>
+      </li>
+      <li><strong>Example:</strong> For input age (1-100):
+        <ul>
+          <li>Valid: 1–100</li>
+          <li>Invalid: &lt;1, &gt;100</li>
+        </ul>
+      </li>
+      <li><strong>Advantages:</strong> Reduces test effort, improves coverage efficiency.</li>
+    </ul>
+
+    <div class="nav-buttons">
+      <a href="post23.html">← Previous</a>
+      <a href="post25.html">Next →</a>
+    </div>
+  </div>
+</body>
+</html>

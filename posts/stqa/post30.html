@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Software Testing – Problem Reporting & Corrective Action</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      background: #fff;
+      margin: auto;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #1a237e;
+    }
+    h2 {
+      color: #2c3e50;
+      margin-top: 30px;
+      border-bottom: 2px solid #2c3e50;
+      padding-bottom: 6px;
+    }
+    ul, ol {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #2c3e50;
+      color: white;
+    }
+    .example {
+      background: #ecf0f1;
+      padding: 15px 20px;
+      border-left: 5px solid #2980b9;
+      margin-bottom: 30px;
+      color: #34495e;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+    .nav-buttons a {
+      background-color: #007acc;
+      color: white;
+      padding: 10px 16px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .nav-buttons a:hover {
+      background-color: #0d165c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../stqa.html" class="back-link">&larr; Back to Main Menu</a>
+    <h1>Section 30: Problem Reporting & Corrective Action</h1>
+
+    <h2>1. What is Problem Reporting?</h2>
+    <p>
+      Problem reporting is the formal process of identifying, documenting, and communicating defects, issues, or anomalies found during testing. A well-managed problem reporting process helps ensure transparency, traceability, and resolution tracking.
+    </p>
+
+    <h2>2. Objectives</h2>
+    <ul>
+      <li>Identify and document defects clearly and consistently</li>
+      <li>Track the status of problems and fixes</li>
+      <li>Ensure accountability and traceability of defect resolutions</li>
+      <li>Communicate issues effectively among teams</li>
+    </ul>
+
+    <h2>3. Common Problem Report Components</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Field</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Summary</td>
+          <td>Short description of the issue</td>
+        </tr>
+        <tr>
+          <td>Steps to Reproduce</td>
+          <td>Clear steps to reproduce the defect</td>
+        </tr>
+        <tr>
+          <td>Expected Result</td>
+          <td>What should have happened</td>
+        </tr>
+        <tr>
+          <td>Actual Result</td>
+          <td>What actually happened</td>
+        </tr>
+        <tr>
+          <td>Severity</td>
+          <td>Impact of the issue on system</td>
+        </tr>
+        <tr>
+          <td>Priority</td>
+          <td>Importance and urgency of fix</td>
+        </tr>
+        <tr>
+          <td>Status</td>
+          <td>Open, In Progress, Resolved, Closed, etc.</td>
+        </tr>
+        <tr>
+          <td>Environment</td>
+          <td>Browser, OS, system version, etc.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>4. Defect Lifecycle</h2>
+    <ol>
+      <li>New</li>
+      <li>Assigned</li>
+      <li>Open / In Progress</li>
+      <li>Fixed</li>
+      <li>Retested</li>
+      <li>Closed (or Reopened)</li>
+    </ol>
+
+    <h2>5. Corrective Action Process</h2>
+    <p>
+      Corrective action refers to steps taken to eliminate the root cause of a problem or defect and prevent recurrence. This process usually involves:
+    </p>
+    <ul>
+      <li>Analyzing the defect</li>
+      <li>Identifying the root cause</li>
+      <li>Implementing the fix</li>
+      <li>Testing the fix</li>
+      <li>Updating documentation or code standards</li>
+    </ul>
+
+    <h2>6. Example: Bug Report Format</h2>
+    <div class="example">
+      <strong>Bug ID:</strong> #1014<br/>
+      <strong>Summary:</strong> Login button does not respond<br/>
+      <strong>Steps to Reproduce:</strong>
+      <ol>
+        <li>Navigate to Login Page</li>
+        <li>Enter valid credentials</li>
+        <li>Click "Login"</li>
+      </ol>
+      <strong>Expected Result:</strong> User is redirected to dashboard<br/>
+      <strong>Actual Result:</strong> Nothing happens<br/>
+      <strong>Severity:</strong> High<br/>
+      <strong>Priority:</strong> Urgent<br/>
+      <strong>Status:</strong> Open<br/>
+      <strong>Environment:</strong> Chrome 114, Windows 10
+    </div>
+
+    <h2>7. Benefits of Effective Problem Reporting & Correction</h2>
+    <ul>
+      <li>Reduces defect leakage to production</li>
+      <li>Improves software quality and customer satisfaction</li>
+      <li>Helps in audit and compliance</li>
+      <li>Encourages accountability within teams</li>
+    </ul>
+
+    <div class="nav-buttons">
+      <a href="post29.html">← Previous</a>
+      <a href="../../index.html">Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>

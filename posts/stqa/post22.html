@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Section 22: Software Verification and Validation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      max-width: 900px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #007acc;
+    }
+    h2 {
+      color: #2c3e50;
+      margin-top: 30px;
+      border-bottom: 2px solid #2c3e50;
+      padding-bottom: 6px;
+    }
+    ul, ol {
+      margin-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+    .nav-buttons a {
+      background-color: #007acc;
+      color: white;
+      padding: 10px 16px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .nav-buttons a:hover {
+      background-color: #0d165c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../stqa.html" class="back-link">&larr; Back to Main Menu</a>
+    <h1>Section 22: Software Verification and Validation</h1>
+
+    <h2>1. Introduction</h2>
+    <p>
+      Software Verification and Validation (V&V) are essential quality assurance processes that ensure software systems meet their specifications and fulfill their intended purposes. Though often mentioned together, they focus on different aspects of quality assurance.
+    </p>
+
+    <h2>2. Definition</h2>
+    <ul>
+      <li><strong>Verification:</strong> "Are we building the product right?"</li>
+      <li><strong>Validation:</strong> "Are we building the right product?"</li>
+    </ul>
+    <p>
+      Verification ensures that the software correctly implements specific functions, while validation ensures that the software fulfills the user’s actual requirements.
+    </p>
+
+    <h2>3. Verification Process</h2>
+    <p>
+      Verification is a static process that includes activities such as:
+    </p>
+    <ul>
+      <li><strong>Requirements Reviews:</strong> Ensuring that requirements are well-defined and complete.</li>
+      <li><strong>Design Reviews:</strong> Checking if system design meets specified requirements.</li>
+      <li><strong>Code Reviews:</strong> Manually examining the code for standards compliance and logic correctness.</li>
+      <li><strong>Walkthroughs & Inspections:</strong> Peer review techniques for early defect detection.</li>
+    </ul>
+
+    <h2>4. Validation Process</h2>
+    <p>
+      Validation is a dynamic process involving execution of code:
+    </p>
+    <ul>
+      <li><strong>Unit Testing:</strong> Testing individual modules for correctness.</li>
+      <li><strong>Integration Testing:</strong> Verifying interaction between components.</li>
+      <li><strong>System Testing:</strong> Ensuring complete system works according to requirements.</li>
+      <li><strong>Acceptance Testing:</strong> Confirming that the final product meets user expectations and needs.</li>
+    </ul>
+
+    <h2>5. Importance of V&V</h2>
+    <ul>
+      <li>Reduces development and maintenance cost by identifying defects early.</li>
+      <li>Improves product reliability and customer satisfaction.</li>
+      <li>Essential for safety-critical systems (e.g., medical, aerospace).</li>
+    </ul>
+
+    <h2>6. Differences between Verification and Validation</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+      <tr>
+        <th>Aspect</th>
+        <th>Verification</th>
+        <th>Validation</th>
+      </tr>
+      <tr>
+        <td>Purpose</td>
+        <td>Check if product meets specifications</td>
+        <td>Check if product meets user needs</td>
+      </tr>
+      <tr>
+        <td>Type</td>
+        <td>Static (no execution)</td>
+        <td>Dynamic (requires execution)</td>
+      </tr>
+      <tr>
+        <td>Performed During</td>
+        <td>Development stages</td>
+        <td>Final stages (post-implementation)</td>
+      </tr>
+      <tr>
+        <td>Examples</td>
+        <td>Reviews, Inspections</td>
+        <td>Testing, User acceptance</td>
+      </tr>
+    </table>
+
+    <h2>7. Conclusion</h2>
+    <p>
+      Verification and validation together ensure that the software product is both technically correct and practically usable. Verification builds confidence during development, while validation confirms customer satisfaction before release.
+    </p>
+
+    <div class="nav-buttons">
+      <a href="post21.html">← Previous</a>
+      <a href="post23.html">Next →</a>
+    </div>
+  </div>
+</body>
+</html>
